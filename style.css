@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&family=Ubuntu&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color:hsl(355, 100%, 74%);
+    position: relative;
+}
+    
+.menu ul{
+    display:inline-flex;
+    margin: 50px;
+}
+.menu li{
+    list-style: none;
+    margin: 0 20px;
+    color: #fff;
+    cursor:pointer;
+    font-size: 12px;
+    font-family: Overpass;
+}
+
+.active{
+    color:aliceblue;
+
+}
+.signup{
+    top: 40px;
+    right: 80px;
+    position: absolute;
+    text-decoration: none;
+    color: rgb(230, 114, 114);
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 20px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.signup span{
+    display: block;
+    padding: 5px 20px;
+}
+.login{
+    top: 40px;
+    right: 180px;
+    position: absolute;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 12px;
+}
+.login span{
+    display: block;
+    padding: 8px 22px;
+}
+.banner {
+    font-family: overpass;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.banner-btn{
+    margin: 70px auto 0;
+}
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+.banner-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+.banner-btn a:hover span{
+    width: 100%;
+}
+.banner-btn a:hover{
+    color: rgb(230, 114, 114);
+}
+.title{
+    margin: 10px;
+    padding-top: 1rem;
+    text-align: center;
+    font-family: Overpass;
+    font-size: 20px;
+    color: hsl(207, 13%, 34%);
+}
+
+
+.footer-container{
+    padding-top: 2rem;
+    background-color: hsl(240, 10%, 16%);
+    padding-bottom: 0.5rem;
+}
+.footer{
+    width: 80%;
+    height: 40vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+    margin-right: 8rem;
+}
+.footer-heading h3{
+    margin-bottom: 2rem;
+}
+.footer-heading a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+.footer-heading a:hover{
+    color:hsl(240, 2%, 79%);
+    transition: 0.3s ease-out;
+}
+@media screen and (max-width: 1140px){
+    .footer{
+        height: 50vh;
+        padding-top: 2rem;
+    }
+}
+.attribution{
+    text-align: center;
+
+}
